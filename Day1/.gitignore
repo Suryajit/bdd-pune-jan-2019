@@ -1,0 +1,7 @@
+*.log
+*.txt
+*.class
+*.war
+*.jar
+target/**/*
+*.java.swp
