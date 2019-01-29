@@ -17,6 +17,10 @@ public class RPNCalculator {
 		firstNumber = numberStack.pop();
 	}
 
+/** 
+ * These are dead code now - feel free to delete them. 
+ * I left them commented just for your reference
+ *
 	private void add() {
 		retrieveOperands();
 		result = firstNumber + secondNumber;
@@ -40,6 +44,8 @@ public class RPNCalculator {
 		result = firstNumber / secondNumber;
 		numberStack.push ( result );
 	}
+
+**/
 
 	private boolean isMathOperator( String token ) {
 		String strMathOperators = "+-*/";
