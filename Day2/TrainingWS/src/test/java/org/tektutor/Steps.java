@@ -10,6 +10,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.*;
 
 import static org.junit.Assert.*;
+import org.junit.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +33,26 @@ public class Steps {
 	private String duration;
 
 	private String expectedResponseData, actualResponseData;
+
+	@BeforeClass
+	public static void beforeClass() {
+		System.out.println ( "Before Class");
+	}
+
+	@Before
+	public void beforeMethod() {
+		System.out.println ( "Before Method" );
+	}
+
+	@After
+	public void afterMethod() {
+		System.out.println ( "After Method" );
+	}
+
+	@AfterClass
+	public static void afterClass() {
+		System.out.println ( "After Class");
+	}
 
 	@Given("the Training REST API is hosted at endpoint {string}")
 	public void the_Training_REST_API_is_hostend_at_endpoint(String endpointURL ) {
